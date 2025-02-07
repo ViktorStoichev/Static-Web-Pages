@@ -14,3 +14,107 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    gap: 1rem;
+    width: 60%;
+    padding: 1rem;
+}
+
+main {
+    flex: 0 1 75%;
+}
+
+aside {
+    flex: 0 1 25%;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile input {
+    flex-grow: 1;
+}
+
+h3 {
+    letter-spacing: 0.3rem;
+}
+
+h3, i {
+    color: #585858;
+}
+
+form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+input, textarea {
+    background-color: #F5F5F5;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+input:not([type="submit"]) {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #a8a8a8;
+    margin-top: 2rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #585858;
+}
+
+textarea {
+    border-bottom: 2px solid lightgray;
+}
+
+input[type="submit"] {
+    background-color: #585858;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    width: 12%;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    gap: 2rem;
+    color: grey;
+}
+
+footer > p > a {
+    color: #585858;
+}
+
+div.icons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+div.icons p {
+    border: 2px solid lightgray;
+    width: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
