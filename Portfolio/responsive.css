@@ -1,0 +1,31 @@
+@media (width <= 1000px) {
+    .site-header > i {
+        left: 47%;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-header {
+        bottom: 50%;
+    }
+}
+
+@media (width <= 600px) {
+    .site-header > i {
+        left: 45%;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-header {
+        bottom: 50%;
+    }
+}
