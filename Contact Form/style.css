@@ -15,6 +15,17 @@ html {
     box-sizing: inherit;
 }
 
+body, input, textarea, table {
+    font: inherit;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
 body {
     min-height: 100dvh;
     display: flex;
@@ -87,8 +98,8 @@ input[type="submit"] {
     padding: 1rem;
     font-weight: bold;
     border-radius: 0.2rem;
-    width: 12%;
     letter-spacing: 0.2rem;
+    max-width: 5em;
     margin-bottom: 2rem;
 }
 
