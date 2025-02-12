@@ -8,7 +8,7 @@
 
 html {
     box-sizing: border-box;
-    font: clamp(10px, 2vw, 20px)/1.4 'Open Sans 3', sans-serif;
+    font: clamp(10px, 2vw, 20px)/1.4 'Open Sans', sans-serif;
     background-color: #C1BBBB;
 }
 
@@ -16,8 +16,9 @@ html {
     box-sizing: inherit;
 }
 
-body, input, textarea, table {
+body, input, textarea, table, button, a {
     font: inherit;
+    color: inherit;
 }
 
 h1 { font-size: 2.8rem; }
@@ -29,4 +30,112 @@ h6 { font-size: 1.0rem; }
 
 p, ul, ol {
     padding-bottom: 1.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 70%;
+    border: 2px solid red;
+    margin: 0 auto;
+    color: #444444;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+header > h2 {
+    background-color: #5DA391;
+    color: white;
+    padding-right: 0.4rem;
+    font-family: "Oleo Script", serif;
+}
+
+header > h2, nav > ul li:first-of-type a, .first-sec-buttons div {
+    border-radius: 0.3rem;
+}
+
+header > span {
+    color: #3D3C3C;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-bottom: 0;
+}
+
+nav > ul li a {
+    text-decoration: none;
+}
+
+nav > ul li:first-of-type a {
+    background-color: #444444;
+    color: white;
+    padding: 0.5rem;
+}
+
+main {
+    width: 100%;
+}
+
+.first-sec {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.first-sec-title {
+    flex: 0 1 40%;
+}
+
+.first-sec-title, .first-sec-buttons {
+    font-size: 2rem;
+}
+
+.first-sec-title h3 {
+    font-size: 3rem;
+}
+
+.first-sec-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    flex: 0 1 40%;
+    font-weight: bold;
+}
+
+.first-sec-buttons div {
+    padding: 1rem 2rem;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-sec-buttons .ok-btn {
+    background-color: #298FC4;
+    color: white;
+}
+
+.first-sec-buttons button {
+    background-color: inherit;
+    border: none;
 }
