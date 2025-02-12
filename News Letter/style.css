@@ -60,7 +60,11 @@ header > h2 {
     font-family: "Oleo Script", serif;
 }
 
-header > h2, nav > ul li:first-of-type a, .first-sec-buttons div {
+header > h2,
+nav > ul li:first-of-type a,
+.first-sec-buttons div,
+.second-sec article,
+.first-sec {
     border-radius: 0.3rem;
 }
 
@@ -92,6 +96,9 @@ nav > ul li:first-of-type a {
 
 main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .first-sec {
@@ -111,6 +118,8 @@ main {
 
 .first-sec-title h3 {
     font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
 }
 
 .first-sec-buttons {
@@ -138,4 +147,32 @@ main {
 .first-sec-buttons button {
     background-color: inherit;
     border: none;
+}
+
+.second-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-sec article {
+    background-color: #FFFFFF;
+    max-width: 31%;
+}
+
+.second-sec article img {
+    width: 100%;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.second-sec article .content {
+    padding: 1rem;
+}
+
+.second-sec article h4 {
+    margin-top: 1rem;
+}
+
+.second-sec article p:last-of-type {
+    line-height: 2rem;
 }
