@@ -37,7 +37,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    border: 2px solid red;
     margin: 0 auto;
     color: #444444;
 }
@@ -70,7 +69,8 @@ nav > ul li:first-of-type a,
 .first-sec,
 .third-sec div.continue-btn,
 .third-sec div.more-btn,
-.third-sec .images img {
+.third-sec .images img,
+footer > section .icons div {
     border-radius: 0.3rem;
 }
 
@@ -238,4 +238,53 @@ aside {
 
 .third-sec section:last-of-type p:first-of-type > span {
     font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+footer > section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer > section article:not(:last-of-type) p {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+}
+
+footer > section article p {
+    line-height: 0.5rem;
+}
+
+footer > section article h4 {
+    margin-bottom: 2rem;
+}
+
+footer > section article:last-of-type h4 {
+    margin-bottom: 1.5rem;
+}
+
+footer > section .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer > section .icons div {
+    background-color: #444444;
+    color: white;
+    font-size: 2rem;
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
